@@ -148,8 +148,9 @@ class ViewController: UIViewController {
                 layout.minimumInteritemSpacing = 0
                 layout.minimumLineSpacing = 0
                 let collectionView:UICollectionViewController = HomeFeedCollectionViewController.init(collectionViewLayout:layout )
-                //let collectionView:UICollectionViewController = HomeFeedCollectionViewController()
+                
                 self.navigationController?.pushViewController(collectionView, animated: true)
+                self.navigationController?.pushViewController(ViewCollection(collectionViewLayout: Layout()), animated: true)
             }
         }
     }
